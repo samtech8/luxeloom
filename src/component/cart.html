@@ -1,0 +1,47 @@
+<section id="shop">
+    <h2>Shop the Latest Fashion</h2>
+    <link rel="stylesheet" href="../style/cart.css">
+
+    <div class="product-group">
+        <div class="product">
+            <img src="../public/image2.jpg" alt="Elegant Red Dress">
+            <h3>Elegant Red Dress</h3>
+            <p>$120</p>
+            <input type="number" id="quantity-dress" min="1" value="1">
+            <button onclick="addToCart('Elegant Red Dress', 120, 'quantity-dress')">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="../public/image9.jpg" alt="Luxury Heels">
+            <h3>Luxury Heels</h3>
+            <p>$95</p>
+            <input type="number" id="quantity-heels" min="1" value="1">
+            <button onclick="addToCart('Luxury Heels', 95, 'quantity-heels')">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="../public/image1.jpg" alt="Designer Handbag">
+            <h3>Designer Handbag</h3>
+            <p>$180</p>
+            <input type="number" id="quantity-bag" min="1" value="1">
+            <button onclick="addToCart('Designer Handbag', 180, 'quantity-bag')">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="../public/image6.jpg" alt="Elegant Gold Necklace">
+            <h3>Elegant Gold Necklace</h3>
+            <p>$250</p>
+            <input type="number" id="quantity-necklace" min="1" value="1">
+            <button onclick="addToCart('Elegant Gold Necklace', 250, 'quantity-necklace')">Add to Cart</button>
+        </div>
+        
+
+<!-- Shopping Cart Section (Moved Below) -->
+<section id="cart">
+    <h2>Shopping Cart</h2>
+    <ul id="cart-list"></ul>
+    <p><strong>Total:</strong> $<span id="cart-total">0</span></p>
+    <button id="clear-cart">Clear Cart</button>
+</section>
+
+<script src="../js/cart.js"></script>
